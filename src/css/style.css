@@ -7,11 +7,9 @@
     height: 350px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     margin: 20px auto;
     padding: 20px;
     border: 3px solid black;
-    /* background:  center/100% url("/src/images/smoke.jpg"); */
 }
 .bold {
     font-size: 25px;
