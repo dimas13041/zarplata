@@ -23,14 +23,14 @@ function getZP() {
     const selectedValue = group.value;
     if (selectedValue === 'first') {
         const zarplata = first(TOV, FOP);
-        if (zarplata < 10000) {
+        if (zarplata < 1000) {
             document.getElementById("zep").innerHTML = zarplata + ' - вы кассир!';
         } else {
             document.getElementById("zep").innerHTML = zarplata + ' - вы продавец!';
         }
     } else if (selectedValue === 'second') {
         const zarplata = second(TOV, FOP);
-        if (zarplata < 15000) {
+        if (zarplata < 1500) {
             document.getElementById("zep").innerHTML = zarplata + ' - вы кассир!';
         } else {
             document.getElementById("zep").innerHTML = zarplata + ' - вы продавец!';
@@ -38,7 +38,7 @@ function getZP() {
         
     } else {
         const zarplata = therth(TOV, FOP);
-        if (zarplata < 20000) {
+        if (zarplata < 2000) {
             document.getElementById("zep").innerHTML = zarplata + ' - вы кассир!';
         } else {
             document.getElementById("zep").innerHTML = zarplata + ' - вы продавец!';
