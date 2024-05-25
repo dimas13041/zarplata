@@ -7,8 +7,13 @@
     <title>Зарплата</title>
 </head>
 <body>
-    ФОП:<input type="text" id="FOP" oninput="getZP()"> 
-    ТОВ:<input type="text" id="TOV" oninput="getZP()">
+    <div class="box">
+    <p class="bold">ФОП:
+    <input type="text" id="FOP" class="inputs" style="margin-bottom: 15px;" oninput="getZP()">
+    </p> 
+    <p class="bold">ТОВ:
+    <input type="text" id="TOV" class="inputs" oninput="getZP()">
+    </p>
     <select id="myDropdown" oninput="getZP()">
         <option value="first">1 группа</option>
         <option value="second">2 группа</option>
@@ -16,6 +21,7 @@
     </select>
     <div class="res" id="res">Вы заработали:<p class="zep" id="zep"></p>
     </div>
+</div>
     <script src="src/js/zp.js"></script>
 </body>
 </html>

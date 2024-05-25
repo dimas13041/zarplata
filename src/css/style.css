@@ -1,4 +1,33 @@
+* {
+    margin: 0;
+}
+
+.box {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid black;
+    /* background:  center/100% url("/src/images/smoke.jpg"); */
+}
+.bold {
+    font-size: 25px;
+}
 .res, .zep {
     font-size: 36px;
 }
 
+#myDropdown {
+    font-size: 25px;
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.inputs {
+    box-sizing: border-box;
+    height: 30px;
+}
