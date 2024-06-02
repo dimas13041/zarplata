@@ -96,10 +96,11 @@ body {
     border: none;
     border-radius: 3px;
     padding: 8px 10px;
-    box-shadow: 2px 2px 4px inset rgba(0, 0, 0, 0.25);
+    /* box-shadow: 2px 2px 4px inset rgba(0, 0, 0, 0.25); */
     background-color: #FFE4D9;
     outline: none;
 }
+
 
 .calc {
     margin-bottom: 70px;
