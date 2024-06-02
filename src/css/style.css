@@ -7,7 +7,6 @@ body {
     background: linear-gradient(-18deg, #CF4040 13%, #FF7A00);
 }
 
-<<<<<<< HEAD
 body {
     padding: 30px;
     background: linear-gradient(-26deg,#ED6418, #CF4040);
@@ -17,23 +16,6 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: white;
-=======
-.box {
-    width: 550px;
-    height: 570px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    padding: 20px;
-    border: 3px solid black;
-    
-}
-.bold {
-    font-size: 25px;
-}
-.res, .zep {
-    font-size: 36px;
->>>>>>> 3b3b68cecc6a18147d04ba7258338da535dd2c55
 }
 
 .box {
