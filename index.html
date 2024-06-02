@@ -17,18 +17,18 @@
         <div class="inner">
             <div class="inputs">
                 <div class="data">
-                    ФОП:<input type="text" id="FOP" class="input" oninput="getZP()">
+                    ФОП:<input type="text" id="FOP" class="input">
                 </div>
                 <div class="data">
-                    ТОВ:<input type="text" id="TOV" class="input" oninput="getZP()">
+                    ТОВ:<input type="text" id="TOV" class="input"">
                 </div>
             </div>
-            <select id="myDropdown" class="select" oninput="getZP()">
+            <select id="myDropdown" class="select">
                 <option value="first">1 группа (5%)</option>
                 <option value="second">2 группа (6%)</option>
                 <option value="therth">3 группа (7%)</option>
             </select>
-            <button class="calc">Вычислить</button>
+            <button class="calc" id="calc">Вычислить</button>
             <div class="res" id="res">
                 <p class="res__text">Ваш заработок:</p>
                 <div type="text" class="zep" id="zep"></div>

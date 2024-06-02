@@ -16,6 +16,10 @@ function therth(tov, fop) {
     return sumfop + sumtov;
 }
 
+const myButton = document.getElementById("calc");
+myButton.addEventListener("click", getZP);
+
+
 function getZP() {
     const FOP = document.getElementById("FOP").value;
     const TOV = document.getElementById("TOV").value;
