@@ -1,14 +1,9 @@
 * {
     margin: 0;
 }
-body {
-    width: 650px;
-    height: 670px;
-    background: linear-gradient(-18deg, #CF4040 13%, #FF7A00);
-}
 
 body {
-    padding: 30px;
+    padding: 15px;
     background: linear-gradient(-26deg,#ED6418, #CF4040);
     font-family: 'Raleway';
     font-style: normal;
@@ -39,6 +34,7 @@ body {
     width: 300px;
     height: 30px;
     top: 25px;
+    left: 25px;
 }
 
 .box::after {
@@ -50,6 +46,7 @@ body {
     width: 300px;
     height: 30px;
     bottom: 25px;
+    right: 25px;
 }
 
 .inner {
