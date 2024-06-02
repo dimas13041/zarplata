@@ -2,30 +2,130 @@
     margin: 0;
 }
 
-.box {
-    width: 350px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    padding: 20px;
-    border: 3px solid black;
-}
-.bold {
-    font-size: 25px;
-}
-.res, .zep {
-    font-size: 36px;
+body {
+    padding: 30px;
+    background: linear-gradient(-26deg,#ED6418, #CF4040);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
 }
 
-#myDropdown {
-    font-size: 25px;
-    width: 185px;
-    margin-top: 15px;
-    margin-bottom: 100px;
+.box {
+    box-sizing: border-box;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px 15px;
+    border: 6px solid #fff;
+    position: relative;
+}
+
+
+.box::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/linia.svg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 30px;
+    top: 25px;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/linia.svg);
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    width: 300px;
+    height: 30px;
+    bottom: 25px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 254px;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
     box-sizing: border-box;
+    width: 200px;
     height: 30px;
+    background-color: #FFE4D9;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 15px;
+    box-shadow: 2px 2px 4px inset rgba(0, 0, 0, 0.25);
+}
+
+.select {
+    font-size: 11px;
+    width: 254px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 10px;
+    box-shadow: 2px 2px 4px inset rgba(0, 0, 0, 0.25);
+    background-color: #FFE4D9;
+    outline: none;
+}
+
+.calc {
+    margin-bottom: 70px;
+    width: 254px;
+    height: 36px;
+    background: linear-gradient(-67deg, rgba(255,0,0,1) 8%, rgba(255,107,0,1) 57%, rgba(244,1,0,1) 91%);
+    border:none;
+    border-radius: 22px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff; 
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25), inset 0 0 6.2px 1px rgba(54, 12, 0, 0.25);
+}
+
+.res__text {
+    padding: 5px 5px;
+    font-size: 16px;
+}
+
+.zep {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 254px;
+    height: 30px;
+    background-color: #FFE4D9;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 15px;
+    box-shadow: 3px 4px 4px inset rgba(0, 0, 0, 0.25);
+    color: #360C00;
+    font-size: 14px;
+    line-height: 1;
 }
