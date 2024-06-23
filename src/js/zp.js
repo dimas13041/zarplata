@@ -65,7 +65,7 @@ function getZP() {
         }
         }, 2000)
         
-    } else if (selectedValue === '2 группа (6%)') {
+    } else if (select.textContent === '2 группа (6%)') {
         const zarplata = second(TOV, FOP);
         loading.classList.add('none');
         setTimeout(() => {
