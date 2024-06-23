@@ -10,7 +10,7 @@ function toggleList() {
 }
 
 document.addEventListener('click', (e) => {
-    if (e.target.matches('.click') || e.target.matches('#arow')) {
+    if (e.target.matches('.click') || e.target.matches('#arow') || e.target.matches('.select')) {
         toggleList();
     } else if (e.target.matches('#first')) {
         select.textContent = e.target.textContent;
