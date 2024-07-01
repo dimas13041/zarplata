@@ -49,7 +49,7 @@ function getZP() {
   const FOP = document.getElementById("FOP").value;
   const TOV = document.getElementById("TOV").value;
   if (select.textContent === "1 группа (5%)") {
-    const zarplata = first(TOV, FOP);
+    const zarplata = first(TOV, FOP).toFixed(2);
     loading.classList.remove("none");
     document.querySelector(".zep-text").innerHTML = "";
     setTimeout(() => {
@@ -63,7 +63,7 @@ function getZP() {
       }
     }, 2000);
   } else if (select.textContent === "2 группа (6%)") {
-    const zarplata = second(TOV, FOP);
+    const zarplata = second(TOV, FOP).toFixed(2);
     loading.classList.remove("none");
     document.querySelector(".zep-text").innerHTML = "";
     setTimeout(() => {
@@ -77,7 +77,7 @@ function getZP() {
       }
     }, 2000);
   } else {
-    const zarplata = therth(TOV, FOP);
+    const zarplata = therth(TOV, FOP).toFixed(2);
     loading.classList.remove("none");
     document.querySelector(".zep-text").innerHTML = "";
     setTimeout(() => {
