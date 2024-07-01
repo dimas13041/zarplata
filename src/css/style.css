@@ -1,245 +1,249 @@
 @font-face {
-    font-family: 'Segoe UI Variable';
-    src: url('../fonts/SegoeUIVF.ttf');
+  font-family: "Segoe UI Variable";
+  src: url("../fonts/SegoeUIVF.ttf");
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    padding: 15px;
-    background: linear-gradient(-26deg, #ED6418, #CF4040);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 19px;
-    color: white;
+  padding: 15px;
+  background: linear-gradient(-26deg, #ed6418, #cf4040);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
 }
 
 .box {
-    box-sizing: border-box;
-    max-width: 450px;
-    height: 667px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* margin: 0 auto; */
-    padding: 50px 15px;
-    border: 6px solid #fff;
-    position: relative;
+  box-sizing: border-box;
+  max-width: 450px;
+  height: 667px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 0 auto; */
+  padding: 50px 15px;
+  border: 6px solid #fff;
+  position: relative;
 }
 
-
 .box::before {
-    content: '';
-    position: absolute;
-    background-image: url(../images/linia.svg);
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 30px;
-    top: 25px;
-    left: 25px;
+  content: "";
+  position: absolute;
+  background-image: url(../images/linia.svg);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 30px;
+  top: 25px;
+  left: 25px;
 }
 
 .box::after {
-    content: '';
-    position: absolute;
-    background-image: url(../images/linia.svg);
-    background-repeat: no-repeat;
-    transform: rotate(180deg);
-    width: 300px;
-    height: 30px;
-    bottom: 215px;
-    right: 25px;
+  content: "";
+  position: absolute;
+  background-image: url(../images/linia.svg);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  width: 300px;
+  height: 30px;
+  bottom: 215px;
+  right: 25px;
 }
 
 .inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-    width: 254px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 254px;
 }
 
 .data {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .input {
-    box-sizing: border-box;
-    width: 200px;
-    height: 30px;
-    background-color: #FFE4D9;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    padding: 8px 15px;
-    box-shadow: 3px 4px 4px -2px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  width: 200px;
+  height: 30px;
+  background-color: #ffe4d9;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 15px;
+  box-shadow: 3px 4px 4px -2px rgba(0, 0, 0, 0.25);
 }
 
 .input:focus {
-    box-shadow: 2px 2px 4px inset rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 4px inset rgba(0, 0, 0, 0.25);
 }
 
 .click {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 18px;
-    border: none;
-    background: #DB4F2F;
-    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 18px;
+  border: none;
+  background: #db4f2f;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 #arow {
-    transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .select-inner {
-    margin-bottom: 30px;
-    position: relative;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .select {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    width: 260px;
-    height: 31px;
-    border-radius: 6px;
-    padding: 8px 10px;
-    box-shadow: 3px 4px 4px -2px rgba(0, 0, 0, 0.25);
-    background-color: #FFE4D9;
-    position: relative;
-    z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 260px;
+  height: 31px;
+  border-radius: 6px;
+  padding: 8px 10px;
+  box-shadow: 3px 4px 4px -2px rgba(0, 0, 0, 0.25);
+  background-color: #ffe4d9;
+  position: relative;
+  z-index: 10;
 }
 
-.select-text{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: normal;
-    font-weight: 350;
-    font-size: 11px;
-    line-height: 15px;
-    color: black;
+.select-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 11px;
+  line-height: 15px;
+  color: black;
 }
 .select-items {
-    height: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    z-index: 1;
-    top: 29px;
-    left: 0;
-    right: 0;
-    background-color: #FFE4D9;
-    border-radius: 6px;
-    gap: 2px;
-    overflow: hidden;
-    transition: all .3s ease;
+  height: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  top: 29px;
+  left: 0;
+  right: 0;
+  background-color: #ffe4d9;
+  border-radius: 6px;
+  gap: 2px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .select-item {
-    list-style-type: none;
-    font-family: 'Segoe UI Variable';
-    font-style: normal;
-    color: black;
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 13px;
-    background-color: rgba(255, 245, 241, 0.5);
-    padding: 5px 0 7px 11px;
-    border-radius: 3px;
+  list-style-type: none;
+  font-family: "Segoe UI Variable";
+  font-style: normal;
+  color: black;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 13px;
+  background-color: rgba(255, 245, 241, 0.5);
+  padding: 5px 0 7px 11px;
+  border-radius: 3px;
 }
 
 .select-item:hover {
-    box-shadow: inset 0 0 0 1px #D94C32;
-    background-color: #FFF5F1;
+  box-shadow: inset 0 0 0 1px #d94c32;
+  background-color: #fff5f1;
 }
 
 .calc {
-    margin-bottom: 70px;
-    width: 254px;
-    height: 36px;
-    background: linear-gradient(-67deg, rgba(255, 0, 0, 1) 8%, rgba(255, 107, 0, 1) 57%, rgba(244, 1, 0, 1) 91%);
-    border: none;
-    border-radius: 22px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 19px;
-    color: #fff;
-    line-height: 1;
-    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25), inset 0 0 6.2px 1px rgba(54, 12, 0, 0.25);
-    cursor: pointer;
+  margin-bottom: 70px;
+  width: 254px;
+  height: 36px;
+  background: linear-gradient(
+    -67deg,
+    rgba(255, 0, 0, 1) 8%,
+    rgba(255, 107, 0, 1) 57%,
+    rgba(244, 1, 0, 1) 91%
+  );
+  border: none;
+  border-radius: 22px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  line-height: 1;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0 0 6.2px 1px rgba(54, 12, 0, 0.25);
+  cursor: pointer;
 }
 
 .calc:hover {
-    box-shadow: 3px 4px 6.1px 1px inset rgba(54, 12, 0, 0.25);
+  box-shadow: 3px 4px 6.1px 1px inset rgba(54, 12, 0, 0.25);
 }
 
 .res__text {
-    padding: 5px 5px;
-    font-size: 16px;
+  padding: 5px 5px;
+  font-size: 16px;
 }
 
 .zep {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    width: 254px;
-    height: 30px;
-    background-color: #FFE4D9;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    padding: 7px 15px;
-    box-shadow: 3px 4px 4px inset rgba(0, 0, 0, 0.25);
-    color: #360C00;
-    font-size: 14px;
-    line-height: 1;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 254px;
+  height: 30px;
+  background-color: #ffe4d9;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 15px;
+  box-shadow: 3px 4px 4px inset rgba(0, 0, 0, 0.25);
+  color: #360c00;
+  font-size: 14px;
+  line-height: 1;
 }
 
 .loading {
-    animation: loading 2s linear infinite;
+  animation: loading 2s linear infinite;
 }
 
 @keyframes loading {
-    from {
-        transform: rotate(0);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .show {
-    height: 98px;
-    padding: 9px 7px; 
+  height: 98px;
+  padding: 9px 7px;
 }
 
 .rotate {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .none {
-    display: none;
+  display: none;
 }
